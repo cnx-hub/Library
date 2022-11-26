@@ -1,8 +1,7 @@
 export default {
   pages: [
-    "pages/home/index",
     "pages/index/index",
-
+    "pages/home/index",
     "pages/booklist/index",
     "pages/cart/index",
     "pages/profile/index",
