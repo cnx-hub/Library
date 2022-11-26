@@ -1,12 +1,19 @@
-import { View, Text } from "@tarojs/components";
+import { Component, ReactNode } from "react";
+import Taro from "@tarojs/taro";
+import { isLogin } from "../../utils/permission";
 import "./index.less";
 
-const Index = () => {
-  return (
-    <View className="index">
-      <Text>Hello world!</Text>
-    </View>
-  );
-};
+class Index extends Component {
+  onLoad() {
+    if (isLogin()) {
+      Taro.switchTab({ url: "/pages/home/index" });
+    } else {
+      Taro.redirectTo({ url: "/pages/register/index" });
+    }
+  }
+  render(): ReactNode {
+    return <></>;
+  }
+}
 
 export default Index;

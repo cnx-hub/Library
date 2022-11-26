@@ -5,6 +5,7 @@ export default {
     "pages/booklist/index",
     "pages/cart/index",
     "pages/profile/index",
+    "pages/register/index",
   ],
   window: {
     backgroundTextStyle: "dark",

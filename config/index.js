@@ -1,4 +1,10 @@
+// eslint-disable-next-line.
+// const path = require('path')
+
 const config = {
+  // alias:{
+  //   "@":path.resolve(__dirname,'..','src')
+  // },
   projectName: 'myApp',
   date: '2022-11-25',
   designWidth: 750,
