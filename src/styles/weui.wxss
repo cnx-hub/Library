@@ -6,11 +6,11 @@ icon {
   vertical-align: middle;
 }
 .weui-cells {
-  position: relative; 
+  position: relative;
   margin-top: 1.17647059em;
   background-color: #FFFFFF;
   line-height: 1.41176471;
-  font-size: 17px;
+  font-size: 17PX;
 }
 .weui-cells:before {
   content: " ";
@@ -18,8 +18,8 @@ icon {
   left: 0;
   top: 0;
   right: 0;
-  height: 1px;
-  border-top: 1rpx solid #D9D9D9;
+  height: 1PX;
+  border-top: 1px solid #D9D9D9;
   color: #D9D9D9;
 }
 .weui-cells:after {
@@ -28,17 +28,17 @@ icon {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 1px;
-  border-bottom: 1rpx solid #D9D9D9;
+  height: 1PX;
+  border-bottom: 1px solid #D9D9D9;
   color: #D9D9D9;
 }
 .weui-cells__title {
   margin-top: .77em;
   margin-bottom: .3em;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 15PX;
+  padding-right: 15PX;
   color: #999999;
-  font-size: 14px;
+  font-size: 14PX;
 }
 .weui-cells_after-title {
   margin-top: 0;
@@ -46,12 +46,12 @@ icon {
 .weui-cells__tips {
   margin-top: .3em;
   color: #999999;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 14px;
+  padding-left: 15PX;
+  padding-right: 15PX;
+  font-size: 14PX;
 }
 .weui-cell {
-  padding: 10px 15px;
+  padding: 10PX 15PX;
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -65,10 +65,10 @@ icon {
   position: absolute;
   top: 0;
   right: 0;
-  height: 1px;
-  border-top: 1rpx solid #D9D9D9;
+  height: 1PX;
+  border-top: 1px solid #D9D9D9;
   color: #D9D9D9;
-  left: 15px;
+  left: 15PX;
 }
 .weui-cell:first-child:before {
   display: none;
@@ -94,29 +94,29 @@ icon {
   color: inherit;
 }
 .weui-cell__ft_in-access {
-  padding-right: 13px;
+  padding-right: 13PX;
   position: relative;
 }
 .weui-cell__ft_in-access:after {
   content: " ";
   display: inline-block;
-  height: 6px;
-  width: 6px;
-  border-width: 2px 2px 0 0;
+  height: 6PX;
+  width: 6PX;
+  border-width: 2PX 2PX 0 0;
   border-color: #C8C8CD;
   border-style: solid;
   -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
           transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
   position: relative;
-  top: -2px;
+  top: -2PX;
   position: absolute;
   top: 50%;
-  margin-top: -4px;
-  right: 2px;
+  margin-top: -4PX;
+  right: 2PX;
 }
 .weui-cell_link {
   color: #586C94;
-  font-size: 14px;
+  font-size: 14PX;
 }
 .weui-cell_link:active {
   background-color: #ECECEC;
@@ -125,20 +125,20 @@ icon {
   display: block;
 }
 .weui-icon-radio {
-  margin-left: 3.2px;
-  margin-right: 3.2px;
+  margin-left: 3.2PX;
+  margin-right: 3.2PX;
 }
 .weui-icon-checkbox_circle,
 .weui-icon-checkbox_success {
-  margin-left: 4.6px;
-  margin-right: 4.6px;
+  margin-left: 4.6PX;
+  margin-right: 4.6PX;
 }
 .weui-check__label:active {
   background-color: #ECECEC;
 }
 .weui-check {
   position: absolute;
-  left: -9999px;
+  left: -9999PX;
 }
 .weui-check__hd_in-checkbox {
   padding-right: 0.35em;
@@ -151,7 +151,7 @@ icon {
   padding-bottom: 0;
 }
 .weui-label {
-  width: 105px;
+  width: 105PX;
   word-wrap: break-word;
   word-break: break-all;
 }
@@ -167,8 +167,8 @@ icon {
   top: 0;
   left: 0;
   right: 0;
-  padding: 5px;
-  font-size: 14px;
+  padding: 5PX;
+  font-size: 14PX;
   text-align: center;
   color: #FFFFFF;
   z-index: 5000;
@@ -202,8 +202,8 @@ icon {
   left: 0;
   top: 0;
   right: 0;
-  height: 1px;
-  border-top: 1rpx solid #D9D9D9;
+  height: 1PX;
+  border-top: 1px solid #D9D9D9;
   color: #D9D9D9;
 }
 .weui-form-preview:after {
@@ -212,19 +212,19 @@ icon {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 1px;
-  border-bottom: 1rpx solid #D9D9D9;
+  height: 1PX;
+  border-bottom: 1px solid #D9D9D9;
   color: #D9D9D9;
 }
 .weui-form-preview__value {
-  font-size: 14px;
+  font-size: 14PX;
 }
 .weui-form-preview__value_in-hd {
-  font-size: 26px;
+  font-size: 26PX;
 }
 .weui-form-preview__hd {
   position: relative;
-  padding: 10px 15px;
+  padding: 10PX 15PX;
   text-align: right;
   line-height: 2.5em;
 }
@@ -234,13 +234,13 @@ icon {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 1px;
-  border-bottom: 1rpx solid #D9D9D9;
+  height: 1PX;
+  border-bottom: 1px solid #D9D9D9;
   color: #D9D9D9;
-  left: 15px;
+  left: 15PX;
 }
 .weui-form-preview__bd {
-  padding: 10px 15px;
+  padding: 10PX 15PX;
   font-size: .9em;
   text-align: right;
   color: #999999;
@@ -248,7 +248,7 @@ icon {
 }
 .weui-form-preview__ft {
   position: relative;
-  line-height: 50px;
+  line-height: 50PX;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -259,8 +259,8 @@ icon {
   left: 0;
   top: 0;
   right: 0;
-  height: 1px;
-  border-top: 1rpx solid #D5D5D6;
+  height: 1PX;
+  border-top: 1px solid #D5D5D6;
   color: #D5D5D6;
 }
 .weui-form-preview__item {
@@ -294,9 +294,9 @@ icon {
   position: absolute;
   left: 0;
   top: 0;
-  width: 1px;
+  width: 1PX;
   bottom: 0;
-  border-left: 1rpx solid #D5D5D6;
+  border-left: 1px solid #D5D5D6;
   color: #D5D5D6;
 }
 .weui-form-preview__btn:first-child:after {
@@ -316,54 +316,54 @@ icon {
 }
 .weui-select {
   position: relative;
-  padding-left: 15px;
-  padding-right: 30px;
+  padding-left: 15PX;
+  padding-right: 30PX;
   height: 2.58823529em;
   min-height: 2.58823529em;
   line-height: 2.58823529em;
-  border-right: 1rpx solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
 }
 .weui-select:before {
   content: " ";
   display: inline-block;
-  height: 6px;
-  width: 6px;
-  border-width: 2px 2px 0 0;
+  height: 6PX;
+  width: 6PX;
+  border-width: 2PX 2PX 0 0;
   border-color: #C8C8CD;
   border-style: solid;
   -webkit-transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
           transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
   position: relative;
-  top: -2px;
+  top: -2PX;
   position: absolute;
   top: 50%;
-  right: 15px;
-  margin-top: -4px;
+  right: 15PX;
+  margin-top: -4PX;
 }
 .weui-select_in-select-after {
   padding-left: 0;
 }
 .weui-cell__hd_in-select-after,
 .weui-cell__bd_in-select-before {
-  padding-left: 15px;
+  padding-left: 15PX;
 }
 .weui-cell_vcode {
   padding-right: 0;
 }
 .weui-vcode-img {
-  margin-left: 5px;
+  margin-left: 5PX;
   height: 2.58823529em;
   vertical-align: middle;
 }
 .weui-vcode-btn {
   display: inline-block;
   height: 2.58823529em;
-  margin-left: 5px;
+  margin-left: 5PX;
   padding: 0 0.6em 0 0.7em;
-  border-left: 1px solid #E5E5E5;
+  border-left: 1PX solid #E5E5E5;
   line-height: 2.58823529em;
   vertical-align: middle;
-  font-size: 17px;
+  font-size: 17PX;
   color: #3CC51F;
   white-space: nowrap;
 }
@@ -371,14 +371,14 @@ icon {
   color: #52a341;
 }
 .weui-cell_switch {
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 6PX;
+  padding-bottom: 6PX;
 }
 .weui-uploader__hd {
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
-  padding-bottom: 10px;
+  padding-bottom: 10PX;
   -webkit-box-align: center;
   -webkit-align-items: center;
           align-items: center;
@@ -392,19 +392,19 @@ icon {
   color: #B2B2B2;
 }
 .weui-uploader__bd {
-  margin-bottom: -4px;
-  margin-right: -9px;
+  margin-bottom: -4PX;
+  margin-right: -9PX;
   overflow: hidden;
 }
 .weui-uploader__file {
   float: left;
-  margin-right: 9px;
-  margin-bottom: 9px;
+  margin-right: 9PX;
+  margin-bottom: 9PX;
 }
 .weui-uploader__img {
   display: block;
-  width: 79px;
-  height: 79px;
+  width: 79PX;
+  height: 79PX;
 }
 .weui-uploader__file_status {
   position: relative;
@@ -429,11 +429,11 @@ icon {
 .weui-uploader__input-box {
   float: left;
   position: relative;
-  margin-right: 9px;
-  margin-bottom: 9px;
-  width: 77px;
-  height: 77px;
-  border: 1px solid #D9D9D9;
+  margin-right: 9PX;
+  margin-bottom: 9PX;
+  width: 77PX;
+  height: 77PX;
+  border: 1PX solid #D9D9D9;
 }
 .weui-uploader__input-box:before,
 .weui-uploader__input-box:after {
@@ -446,12 +446,12 @@ icon {
   background-color: #D9D9D9;
 }
 .weui-uploader__input-box:before {
-  width: 2px;
-  height: 39.5px;
+  width: 2PX;
+  height: 39.5PX;
 }
 .weui-uploader__input-box:after {
-  width: 39.5px;
-  height: 2px;
+  width: 39.5PX;
+  height: 2PX;
 }
 .weui-uploader__input-box:active {
   border-color: #999999;
@@ -470,32 +470,32 @@ icon {
   opacity: 0;
 }
 .weui-article {
-  padding: 20px 15px;
-  font-size: 15px;
+  padding: 20PX 15PX;
+  font-size: 15PX;
 }
 .weui-article__section {
   margin-bottom: 1.5em;
 }
 .weui-article__h1 {
-  font-size: 18px;
+  font-size: 18PX;
   font-weight: 400;
   margin-bottom: .9em;
 }
 .weui-article__h2 {
-  font-size: 16px;
+  font-size: 16PX;
   font-weight: 400;
   margin-bottom: .34em;
 }
 .weui-article__h3 {
   font-weight: 400;
-  font-size: 15px;
+  font-size: 15PX;
   margin-bottom: .34em;
 }
 .weui-article__p {
   margin: 0 0 .8em;
 }
 .weui-msg {
-  padding-top: 36px;
+  padding-top: 36PX;
   text-align: center;
 }
 .weui-msg__link {
@@ -503,30 +503,30 @@ icon {
   color: #586C94;
 }
 .weui-msg__icon-area {
-  margin-bottom: 30px;
+  margin-bottom: 30PX;
 }
 .weui-msg__text-area {
-  margin-bottom: 25px;
-  padding: 0 20px;
+  margin-bottom: 25PX;
+  padding: 0 20PX;
 }
 .weui-msg__title {
-  margin-bottom: 5px;
+  margin-bottom: 5PX;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 20PX;
 }
 .weui-msg__desc {
-  font-size: 14px;
+  font-size: 14PX;
   color: #999999;
 }
 .weui-msg__opr-area {
-  margin-bottom: 25px;
+  margin-bottom: 25PX;
 }
 .weui-msg__extra-area {
-  margin-bottom: 15px;
-  font-size: 14px;
+  margin-bottom: 15PX;
+  font-size: 14PX;
   color: #999999;
 }
-@media screen and (min-height: 438px) {
+@media screen and (min-height: 438PX) {
   .weui-msg__extra-area {
     position: fixed;
     left: 0;
@@ -546,18 +546,18 @@ icon {
           flex: 1;
 }
 .weui-btn {
-  margin-top: 15px;
+  margin-top: 15PX;
 }
 .weui-btn:first-child {
   margin-top: 0;
 }
 .weui-btn-area {
-  margin: 1.17647059em 15px 0.3em;
+  margin: 1.17647059em 15PX 0.3em;
 }
 .weui-agree {
   display: block;
-  padding: .5em 15px;
-  font-size: 13px;
+  padding: .5em 15PX;
+  font-size: 13PX;
 }
 .weui-agree__text {
   color: #999999;
@@ -568,26 +568,26 @@ icon {
 }
 .weui-agree__checkbox {
   position: absolute;
-  left: -9999px;
+  left: -9999PX;
 }
 .weui-agree__checkbox-icon {
   position: relative;
-  top: 2px;
+  top: 2PX;
   display: inline-block;
-  border: 1px solid #D1D1D1;
+  border: 1PX solid #D1D1D1;
   background-color: #FFFFFF;
-  border-radius: 3px;
-  width: 11px;
-  height: 11px;
+  border-radius: 3PX;
+  width: 11PX;
+  height: 11PX;
 }
 .weui-agree__checkbox-icon-check {
   position: absolute;
-  top: 1px;
-  left: 1px;
+  top: 1PX;
+  left: 1PX;
 }
 .weui-footer {
   color: #999999;
-  font-size: 14px;
+  font-size: 14PX;
   text-align: center;
 }
 .weui-footer_fixed-bottom {
@@ -604,7 +604,7 @@ icon {
   vertical-align: top;
   margin: 0 .62em;
   position: relative;
-  font-size: 14px;
+  font-size: 14PX;
   color: #586C94;
 }
 .weui-footer__link:before {
@@ -612,9 +612,9 @@ icon {
   position: absolute;
   left: 0;
   top: 0;
-  width: 1px;
+  width: 1PX;
   bottom: 0;
-  border-left: 1rpx solid #C7C7C7;
+  border-left: 1px solid #C7C7C7;
   color: #C7C7C7;
   left: -0.65em;
   top: .36em;
@@ -625,45 +625,45 @@ icon {
 }
 .weui-footer__text {
   padding: 0 .34em;
-  font-size: 12px;
+  font-size: 12PX;
 }
 .weui-grids {
-  border-top: 1rpx solid #D9D9D9;
-  border-left: 1rpx solid #D9D9D9;
+  border-top: 1px solid #D9D9D9;
+  border-left: 1px solid #D9D9D9;
   overflow: hidden;
 }
 .weui-grid {
   position: relative;
   float: left;
-  padding: 20px 10px;
+  padding: 20PX 10PX;
   width: 33.33333333%;
   box-sizing: border-box;
-  border-right: 1rpx solid #D9D9D9;
-  border-bottom: 1rpx solid #D9D9D9;
+  border-right: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
 }
 .weui-grid_active {
   background-color: #ECECEC;
 }
 .weui-grid__icon {
   display: block;
-  width: 28px;
-  height: 28px;
+  width: 28PX;
+  height: 28PX;
   margin: 0 auto;
 }
 .weui-grid__label {
-  margin-top: 5px;
+  margin-top: 5PX;
   display: block;
   text-align: center;
   color: #000000;
-  font-size: 14px;
+  font-size: 14PX;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .weui-loading {
-  margin: 0 5px;
-  width: 20px;
-  height: 20px;
+  margin: 0 5PX;
+  width: 20PX;
+  height: 20PX;
   display: inline-block;
   vertical-align: middle;
   -webkit-animation: weuiLoading 1s steps(12, end) infinite;
@@ -697,13 +697,13 @@ icon {
 .weui-badge {
   display: inline-block;
   padding: .15em .4em;
-  min-width: 8px;
-  border-radius: 18px;
+  min-width: 8PX;
+  border-radius: 18PX;
   background-color: #E64340;
   color: #FFFFFF;
   line-height: 1.2;
   text-align: center;
-  font-size: 12px;
+  font-size: 12PX;
   vertical-align: middle;
 }
 .weui-badge_dot {
@@ -714,7 +714,7 @@ icon {
   width: 65%;
   margin: 1.5em auto;
   line-height: 1.6em;
-  font-size: 14px;
+  font-size: 14PX;
   text-align: center;
 }
 .weui-loadmore__tips {
@@ -722,7 +722,7 @@ icon {
   vertical-align: middle;
 }
 .weui-loadmore_line {
-  border-top: 1px solid #E5E5E5;
+  border-top: 1PX solid #E5E5E5;
   margin-top: 2.4em;
 }
 .weui-loadmore__tips_in-line {
@@ -735,7 +735,7 @@ icon {
 .weui-loadmore__tips_in-dot {
   position: relative;
   padding: 0 .16em;
-  width: 4px;
+  width: 4PX;
   height: 1.6em;
 }
 .weui-loadmore__tips_in-dot:before {
@@ -743,16 +743,16 @@ icon {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -1px;
-  margin-left: -2px;
-  width: 4px;
-  height: 4px;
+  margin-top: -1PX;
+  margin-left: -2PX;
+  width: 4PX;
+  height: 4PX;
   border-radius: 50%;
   background-color: #E5E5E5;
 }
 .weui-panel {
   background-color: #FFFFFF;
-  margin-top: 10px;
+  margin-top: 10PX;
   position: relative;
   overflow: hidden;
 }
@@ -765,8 +765,8 @@ icon {
   left: 0;
   top: 0;
   right: 0;
-  height: 1px;
-  border-top: 1rpx solid #E5E5E5;
+  height: 1PX;
+  border-top: 1px solid #E5E5E5;
   color: #E5E5E5;
 }
 .weui-panel:after {
@@ -775,14 +775,14 @@ icon {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 1px;
-  border-bottom: 1rpx solid #E5E5E5;
+  height: 1PX;
+  border-bottom: 1px solid #E5E5E5;
   color: #E5E5E5;
 }
 .weui-panel__hd {
-  padding: 14px 15px 10px;
+  padding: 14PX 15PX 10PX;
   color: #999999;
-  font-size: 13px;
+  font-size: 13PX;
   position: relative;
 }
 .weui-panel__hd:after {
@@ -791,13 +791,13 @@ icon {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 1px;
-  border-bottom: 1rpx solid #E5E5E5;
+  height: 1PX;
+  border-bottom: 1px solid #E5E5E5;
   color: #E5E5E5;
-  left: 15px;
+  left: 15PX;
 }
 .weui-media-box {
-  padding: 15px;
+  padding: 15PX;
   position: relative;
 }
 .weui-media-box:before {
@@ -806,17 +806,17 @@ icon {
   left: 0;
   top: 0;
   right: 0;
-  height: 1px;
-  border-top: 1rpx solid #E5E5E5;
+  height: 1PX;
+  border-top: 1px solid #E5E5E5;
   color: #E5E5E5;
-  left: 15px;
+  left: 15PX;
 }
 .weui-media-box:first-child:before {
   display: none;
 }
 .weui-media-box__title {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 17PX;
   width: auto;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -827,7 +827,7 @@ icon {
 }
 .weui-media-box__desc {
   color: #999999;
-  font-size: 13px;
+  font-size: 13PX;
   line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -836,9 +836,9 @@ icon {
   -webkit-line-clamp: 2;
 }
 .weui-media-box__info {
-  margin-top: 15px;
-  padding-bottom: 5px;
-  font-size: 13px;
+  margin-top: 15PX;
+  padding-bottom: 5PX;
+  font-size: 13PX;
   color: #CECECE;
   line-height: 1em;
   list-style: none;
@@ -850,10 +850,10 @@ icon {
 }
 .weui-media-box__info__meta_extra {
   padding-left: 1em;
-  border-left: 1px solid #CECECE;
+  border-left: 1PX solid #CECECE;
 }
 .weui-media-box__title_in-text {
-  margin-bottom: 8px;
+  margin-bottom: 8PX;
 }
 .weui-media-box_appmsg {
   display: -webkit-box;
@@ -870,9 +870,9 @@ icon {
 }
 .weui-media-box__hd_in-appmsg {
   margin-right: .8em;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
+  width: 60PX;
+  height: 60PX;
+  line-height: 60PX;
   text-align: center;
 }
 .weui-media-box__bd_in-appmsg {
@@ -904,7 +904,7 @@ icon {
           flex: 1;
 }
 .weui-progress__opr {
-  margin-left: 15px;
+  margin-left: 15PX;
   font-size: 0;
 }
 .weui-navbar {
@@ -915,7 +915,7 @@ icon {
   z-index: 500;
   top: 0;
   width: 100%;
-  border-bottom: 1rpx solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
 }
 .weui-navbar__item {
   position: relative;
@@ -923,7 +923,7 @@ icon {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
           flex: 1;
-  padding: 13px 0;
+  padding: 13PX 0;
   text-align: center;
   font-size: 0;
 }
@@ -936,7 +936,7 @@ icon {
   left: 0;
   bottom: 0;
   width: 6em;
-  height: 3px;
+  height: 3PX;
   background-color: #1AAD19;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -945,7 +945,7 @@ icon {
 }
 .weui-navbar__title {
   display: inline-block;
-  font-size: 15px;
+  font-size: 15PX;
   max-width: 8em;
   width: auto;
   overflow: hidden;
@@ -960,33 +960,33 @@ icon {
 .weui-tab__panel {
   box-sizing: border-box;
   height: 100%;
-  padding-top: 50px;
+  padding-top: 50PX;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 .weui-search-bar {
   position: relative;
-  padding: 8px 10px;
+  padding: 8PX 10PX;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
   box-sizing: border-box;
   background-color: #EFEFF4;
-  border-top: 1rpx solid #D7D6DC;
-  border-bottom: 1rpx solid #D7D6DC;
+  border-top: 1px solid #D7D6DC;
+  border-bottom: 1px solid #D7D6DC;
 }
 .weui-icon-search {
-  margin-right: 8px;
+  margin-right: 8PX;
   font-size: inherit;
 }
 .weui-icon-search_in-box {
   position: absolute;
-  left: 10px;
-  top: 7px;
+  left: 10PX;
+  top: 7PX;
 }
 .weui-search-bar__text {
   display: inline-block;
-  font-size: 14px;
+  font-size: 14PX;
   vertical-align: middle;
 }
 .weui-search-bar__form {
@@ -994,28 +994,28 @@ icon {
   -webkit-box-flex: 1;
   -webkit-flex: auto;
           flex: auto;
-  border-radius: 5px;
+  border-radius: 5PX;
   background: #FFFFFF;
-  border: 1rpx solid #E6E6EA;
+  border: 1px solid #E6E6EA;
 }
 .weui-search-bar__box {
   position: relative;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 30PX;
+  padding-right: 30PX;
   width: 100%;
   box-sizing: border-box;
   z-index: 1;
 }
 .weui-search-bar__input {
-  height: 28px;
-  line-height: 28px;
-  font-size: 14px;
+  height: 28PX;
+  line-height: 28PX;
+  font-size: 14PX;
 }
 .weui-icon-clear {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 7px 8px;
+  padding: 7PX 8PX;
   font-size: 0;
 }
 .weui-search-bar__label {
@@ -1025,15 +1025,15 @@ icon {
   bottom: 0;
   left: 0;
   z-index: 2;
-  border-radius: 3px;
+  border-radius: 3PX;
   text-align: center;
   color: #9B9B9B;
   background: #FFFFFF;
-  line-height: 28px;
+  line-height: 28PX;
 }
 .weui-search-bar__cancel-btn {
-  margin-left: 10px;
-  line-height: 28px;
+  margin-left: 10PX;
+  line-height: 28PX;
   color: #09BB07;
   white-space: nowrap;
 }
