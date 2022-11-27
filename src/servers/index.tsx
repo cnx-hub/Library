@@ -43,7 +43,7 @@ export class Request {
         ),
         data: param || {},
         success(res) {
-          response = res.data;
+          response = res;
           if (response.statusCode < 400) {
             resolve(res.data);
           } else {
