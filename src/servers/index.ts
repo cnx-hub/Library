@@ -1,6 +1,7 @@
 import Taro from "@tarojs/taro";
 
 import type { RequestMethod } from "./type";
+import { getToken } from "@/utils/permission";
 
 /**
  * 服务器根路径
@@ -34,10 +35,11 @@ export class Request {
       Taro.request({
         url: BASE_URL + relativeUrl,
         method: method,
+        timeout: 5000,
         header: Object.assign(
           {
             "Content-Type": "application/json",
-            // token
+            TOKEN: getToken(),
           },
           header
         ),

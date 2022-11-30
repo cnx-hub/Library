@@ -5,7 +5,7 @@
 .icon-right,
 .icon-down {
   display: inline-block;
-  padding-right: 13rpx;
+  padding-right: 13px;
   position: relative;
 }
 
@@ -15,15 +15,15 @@
   content: "";
   display: inline-block;
   position: relative;
-  bottom: 2rpx;
-  height: 6px;
-  width: 6px;
-  border-width: 2px 2px 0 0;
+  bottom: 2px;
+  height: 6PX;
+  width: 6PX;
+  border-width: 2PX 2PX 0 0;
   border-style: solid;
 }
 
 .icon-up::after {
-  top: 3rpx;
+  top: 3px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
@@ -34,7 +34,7 @@
 }
 
 .icon-down::after {
-  bottom: 4rpx;
+  bottom: 4px;
   -webkit-transform: rotate(135deg);
   transform: rotate(135deg);
 }

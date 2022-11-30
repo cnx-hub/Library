@@ -6,6 +6,7 @@ export default {
     "pages/cart/index",
     "pages/profile/index",
     "pages/register/index",
+    "pages/home/children/advanced-search/index",
   ],
   window: {
     backgroundTextStyle: "dark",

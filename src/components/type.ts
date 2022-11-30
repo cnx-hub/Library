@@ -24,3 +24,8 @@ export interface IOptions {
 export interface IToptip {
   changeShow: (content: string, options?: IOptions) => void;
 }
+
+export interface IPanel {
+  url: string;
+  title: string;
+}

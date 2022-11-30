@@ -20,10 +20,28 @@ function setToken(token: string) {
 }
 
 /**
+ * 获取用户token
+ * @return integer|null
+ */
+
+export function getToken() {
+  return Taro.getStorageSync(TOKEN_KEY);
+}
+
+/**
  * 设置用户id
  */
 function setUID(uid) {
   UID = uid;
+}
+
+/**
+ * 获取用户id
+ * @return integer|null
+ */
+
+export function getUID() {
+  return Taro.getStorageSync(UID_KEY);
 }
 
 /**
@@ -44,7 +62,7 @@ export function isLogin(showModal = false) {
         success: function (res) {
           if (res.confirm) {
             Taro.navigateTo({
-              url: "'/pages/register/register?need_return=true'",
+              url: "'/pages/register/index?need_return=true'",
             });
           }
         },
@@ -71,5 +89,3 @@ export function login(token: string, userInfo: any) {
     return false;
   }
 }
-
-console.log(Taro.getApp().setUserInfo);
