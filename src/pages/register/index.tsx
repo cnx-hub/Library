@@ -82,6 +82,7 @@ const Index = () => {
         // } else {
         // }
         Taro.switchTab({ url: "/pages/home/index" });
+        // 201：创建了新的用户 200：登录成功
       })
       .finally(() => {
         Taro.hideToast();
