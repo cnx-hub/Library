@@ -1,0 +1,63 @@
+
+.collapse__header {
+  position: relative;
+  padding: 20px 30px 10px 30px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.collapse__header-action {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  min-width: 15%;
+  text-align: right;
+  color: #09BB07;
+}
+
+.collapse__body {
+  display: none;
+}
+
+.collapse__body--show {
+  display: block;
+}
+
+
+/* 通用样式类 */
+
+.font-gray-28 {
+  color: #888;
+  font-size: 28px
+}
+
+.icon-right,
+.icon-down {
+  display: inline-block;
+  padding-right: 13px;
+  position: relative;
+}
+
+.icon-right::after,
+.icon-down::after {
+  content: "";
+  display: inline-block;
+  position: relative;
+  bottom: 2px;
+  height: 6PX;
+  width: 6PX;
+  border-width: 2PX 2PX 0 0;
+  border-style: solid;
+}
+
+.icon-right::after {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.icon-down::after {
+  bottom: 4px;
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
