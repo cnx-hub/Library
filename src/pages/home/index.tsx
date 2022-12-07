@@ -3,6 +3,7 @@ import { useCallback, useState, useEffect } from "react";
 import { View, Text } from "@tarojs/components";
 import { isISBN } from "@/utils/validator";
 import HomeSearchBar from "./components/home-search-bar";
+import SearchBox from "./components/search-box";
 import { PageStatusIndicator } from "@/template/page-status-indicator/index";
 import Panel from "@/components/panel";
 import { ShowcaseBook, ShowcaseBooklist } from "@/template/showcase";
@@ -18,6 +19,7 @@ import type { Istatistics } from "./type";
 
 const Home = () => {
   const [history, setHistory] = useState<string[]>([]);
+  const [focus, setFocus] = useState(false);
   const [pageStatus, setPageStatus] = useState<"loading" | "error" | "done">(
     "loading"
   ); //loading,error,done
@@ -36,12 +38,20 @@ const Home = () => {
     Taro.setStorageSync("history", filterHistory);
   };
 
+  const onFocus = useCallback(() => {
+    setFocus(true);
+  }, []);
+
+  const onCancle = useCallback(() => {
+    setFocus(false);
+  }, []);
+
   /**
    * 搜索图书：设置参数并跳转至图书搜索页
    * @param {String} type   搜索类型
    * @param {String} value  关键字值
    */
-  const _search = useCallback(
+  const onSearch = useCallback(
     (type: string, value: string) => {
       // 去除前后空白
       value = value.trim();
@@ -52,11 +62,15 @@ const Home = () => {
         case "书名":
         case "作者":
         case "标签":
-          Taro.navigateTo({ url: "" });
+          Taro.navigateTo({
+            url: `/pages/list/book?type=search&search_type=${type}&keyword=${encodeURIComponent(
+              value
+            )}`,
+          });
           break;
         case "ISBN":
           if (isISBN(value)) {
-            Taro.navigateTo({ url: "" });
+            Taro.navigateTo({ url: `/pages/book-detail/index?isbn=${value}` });
           } else {
             Taro.showModal({
               content: "请输入正确的13位ISBN",
@@ -113,10 +127,14 @@ const Home = () => {
 
   return (
     <View>
-      <HomeSearchBar search={_search}></HomeSearchBar>
+      <HomeSearchBar
+        onSearch={onSearch}
+        onFocus={onFocus}
+        onCancle={onCancle}
+      ></HomeSearchBar>
       <PageStatusIndicator pageStatus={pageStatus} />
       {/* 主页 */}
-      {pageStatus === "done" && (
+      {pageStatus === "done" && !focus && (
         <View className="panel-area">
           <Panel url="/pages/profile/children/order-history" title="阅读统计">
             <View className="color-green statistics-panel__number">
@@ -142,6 +160,8 @@ const Home = () => {
           </Panel>
         </View>
       )}
+
+      {focus && <SearchBox history={history} rankings={ranking} />}
     </View>
   );
 };

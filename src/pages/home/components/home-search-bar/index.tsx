@@ -16,7 +16,7 @@ import "./index.less";
 
 const list = ["书名", "作者", "ISBN", "标签", "高级搜索"];
 
-const HomeSearchBar: FC<SearchBarProps> = ({ search }) => {
+const HomeSearchBar: FC<SearchBarProps> = ({ onSearch, onFocus, onCancle }) => {
   const [focus, setFocus] = useState(false);
   const [show, setShow] = useState(false);
   const [selected, setSelected] = useState("书名");
@@ -24,8 +24,9 @@ const HomeSearchBar: FC<SearchBarProps> = ({ search }) => {
   const _onFocus = useCallback(
     (e) => {
       setFocus(true);
+      onFocus();
     },
-    [setFocus]
+    [setFocus, onFocus]
   );
 
   const _onTapOptionBtn = useCallback(() => {
@@ -52,24 +53,28 @@ const HomeSearchBar: FC<SearchBarProps> = ({ search }) => {
     setFocus(false);
     setShow(false);
     setInputValue("");
-  }, [setFocus, setShow, setInputValue]);
+    onCancle();
+  }, [setFocus, setShow, setInputValue, onCancle]);
 
   const _onClear = useCallback(() => {
     setInputValue("");
   }, [setInputValue]);
 
-  const _onInput = useCallback((e) => {
-    setInputValue(e.detail.value);
-  }, []);
+  const _onInput = useCallback(
+    (e) => {
+      setInputValue(e.detail.value);
+    },
+    [setInputValue]
+  );
 
   const _onConfirm = useCallback(
     (e) => {
       if (InputValue) {
         // 请求列表
-        search(selected, InputValue);
+        onSearch(selected, InputValue);
       }
     },
-    [InputValue]
+    [InputValue, selected]
   );
 
   const _onScan = (e) => {

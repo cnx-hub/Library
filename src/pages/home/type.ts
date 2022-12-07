@@ -1,5 +1,7 @@
 export interface SearchBarProps {
-  search: (type: string, value: string) => void;
+  onSearch: (type: string, value: string) => void;
+  onFocus: () => void;
+  onCancle: () => void;
 }
 
 export type IpageStatus = "loading" | "error" | "done";

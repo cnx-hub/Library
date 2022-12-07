@@ -7,6 +7,8 @@ export default {
     "pages/profile/index",
     "pages/register/index",
     "pages/home/children/advanced-search/index",
+    "pages/list/book",
+    "pages/book-detail/index",
   ],
   window: {
     backgroundTextStyle: "dark",
