@@ -1,7 +1,8 @@
 import Taro from "@tarojs/taro";
-import { useCallback, useState, useEffect } from "react";
+import { useCallback, useState, useEffect, useRef } from "react";
 import { View, Text } from "@tarojs/components";
 import { isISBN } from "@/utils/validator";
+import { showTip } from "@/utils/tip";
 import HomeSearchBar from "./components/home-search-bar";
 import SearchBox from "./components/search-box";
 import { PageStatusIndicator } from "@/template/page-status-indicator/index";
@@ -27,6 +28,10 @@ const Home = () => {
   const [ranking, setRanking] = useState([]);
   const [recommendBooklists, setRecommendBooklists] = useState([]);
   const [statistics, setStatistics] = useState<Istatistics>();
+  const searchRef = useRef<{
+    setInputValue: (value: string) => void;
+    selected: string;
+  }>(null);
 
   const _saveHistory = (value: string) => {
     let filterHistory: string[] = history.filter((v) => v !== value);
@@ -125,12 +130,36 @@ const Home = () => {
     _loadPage();
   }, [_loadPage]);
 
+  const onClearHistory = useCallback(() => {
+    Taro.showModal({
+      title: "清除搜索记录",
+      content: "确定清除所有搜索历史？这项操作将无法撤销",
+      success: function (res) {
+        if (res.confirm) {
+          Taro.removeStorage({ key: "history" });
+          setHistory([]);
+        }
+      },
+    });
+  }, [setHistory]);
+
+  const onClickHistoryItem = useCallback(
+    (value: string) => {
+      showTip("HISTORY").then((res) => {
+        searchRef.current?.setInputValue(value);
+        onSearch(searchRef.current?.selected as string, value);
+      });
+    },
+    [onSearch]
+  );
+
   return (
     <View>
       <HomeSearchBar
         onSearch={onSearch}
         onFocus={onFocus}
         onCancle={onCancle}
+        ref={searchRef}
       ></HomeSearchBar>
       <PageStatusIndicator pageStatus={pageStatus} />
       {/* 主页 */}
@@ -161,7 +190,14 @@ const Home = () => {
         </View>
       )}
 
-      {focus && <SearchBox history={history} rankings={ranking} />}
+      {focus && (
+        <SearchBox
+          history={history}
+          rankings={ranking}
+          onClearHistory={onClearHistory}
+          onClickHistoryItem={onClickHistoryItem}
+        />
+      )}
     </View>
   );
 };
