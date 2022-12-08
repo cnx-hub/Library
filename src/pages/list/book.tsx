@@ -114,7 +114,7 @@ const Book = React.memo(() => {
     Taro.showLoading({ title: "加载中", mask: true });
     _fetchData()
       .then((books) => {
-        if (books.length) {
+        if (!books.length) {
           setIsNoData(true);
         }
       })
