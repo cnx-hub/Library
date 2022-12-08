@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import Taro, { useRouter, useDidShow, useReachBottom } from "@tarojs/taro";
+import { View } from "@tarojs/components";
 import {
   getBooksByKeyword,
   getBooksByAuthor,
@@ -142,6 +143,15 @@ const Book = React.memo(() => {
 
   return (
     <>
+      {/* <!-- 推荐书单、近期热门图书的描述信息 --> */}
+      {(options.type == "recommend" || options.type == "ranking") && (
+        <View className="ui-label">
+          {options.type == "recommend" && (
+            <View>根据你的借阅、收藏和评分等历史行为为你推荐</View>
+          )}
+          {options.type == "ranking" && <View>最近七天的热门图书</View>}
+        </View>
+      )}
       <BookList type={options.type} comments={comments} books={book} />
       {/* <!-- 加载更多、暂无数据 --> */}
       <LoadMore nomoreText={"没有更多图书了"} status={loadMoreStatus} />

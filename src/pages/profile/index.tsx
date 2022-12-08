@@ -2,7 +2,6 @@ import React from "react";
 import { View, Image, Button, Navigator, OpenData } from "@tarojs/components";
 import Collapse from "@/components/collapse";
 import "./index.less";
-import { url } from "inspector";
 
 const Profile = React.memo(() => {
   return (
