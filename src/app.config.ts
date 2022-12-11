@@ -5,6 +5,7 @@ export default {
     "pages/booklist/index",
     "pages/cart/index",
     "pages/profile/index",
+    "pages/profile/chidren/about/index",
     "pages/register/index",
     "pages/home/children/advanced-search/index",
     "pages/list/book",

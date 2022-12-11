@@ -89,3 +89,15 @@ export function login(token: string, userInfo: any) {
     return false;
   }
 }
+
+export function logout() {
+  try {
+    Taro.clearStorage();
+    setToken("");
+    setUID(null);
+    return true;
+  } catch (error) {
+    console.error("清空storage失败: " + error);
+    return false;
+  }
+}

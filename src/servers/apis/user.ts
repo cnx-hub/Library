@@ -7,3 +7,7 @@ export function sendCode(phone: string) {
 export function checkCode<T>(phone: string, code: string) {
   return request.get<T>("/codes/check", { phone, code, type: "wechat" });
 }
+
+export function updateUserInfoById(id: number, params) {
+  return request.post(`/users/${id}`, params);
+}
