@@ -10,7 +10,7 @@ const OrderOngoing = React.memo(() => {
     >
       <View className="weui-cell__hd">
         <Image
-          src={require("@/Images/icon_in_process.png")}
+          src={require("@/images/icon_in_process.png")}
           className="icon"
         ></Image>
       </View>

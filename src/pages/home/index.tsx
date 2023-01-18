@@ -92,7 +92,6 @@ const Home = () => {
 
   const _fetchData = useCallback(
     function () {
-      getRankingBooks().then((res) => console.log(res));
       return Promise.all([
         getRecommendedBooksByUserId(getUID()),
         getRankingBooks(),

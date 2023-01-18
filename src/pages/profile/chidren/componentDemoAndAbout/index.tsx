@@ -12,7 +12,7 @@ const ComponentDemoAndAbout = React.memo(() => {
       >
         <View className="weui-cell__hd">
           <Image
-            src={require("@/Images/icon_headlines.png")}
+            src={require("@/images/icon_headlines.png")}
             className="icon"
           ></Image>
         </View>

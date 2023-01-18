@@ -4,13 +4,13 @@ import { Navigator, View, Image } from "@tarojs/components";
 const QrCode = React.memo(() => {
   return (
     <Navigator
-      url={"./children/qrcode"}
+      url={"/pages/profile/chidren/qrcode/qrcode"}
       className="weui-cell weui-cell_access"
       hoverClass="weui-cell_active"
     >
       <View className="weui-cell__hd">
         <Image
-          src={require("@/Images/icon_paper_plane.png")}
+          src={require("@/images/icon_paper_plane.png")}
           className="icon"
         ></Image>
       </View>

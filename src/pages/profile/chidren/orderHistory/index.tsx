@@ -9,7 +9,7 @@ const OrderHistory = React.memo(() => {
       hoverClass="weui-cell_active"
     >
       <View className="weui-cell__hd">
-        <Image src={require("@/Images/icon_time.png")} className="icon"></Image>
+        <Image src={require("@/images/icon_time.png")} className="icon"></Image>
       </View>
       <View className="weui-cell__bd">借阅历史</View>
       <View className="weui-cell__ft weui-cell__ft_in-access"></View>

@@ -4,7 +4,7 @@ import { Navigator, View, OpenData } from "@tarojs/components";
 const PersonalInformation = React.memo(() => {
   return (
     <Navigator
-      url={"./children/personal-information"}
+      url={"/pages/profile/chidren/personalInformation/personalInformation"}
       className="weui-cell weui-cell_access"
       hoverClass="weui-cell_active"
     >

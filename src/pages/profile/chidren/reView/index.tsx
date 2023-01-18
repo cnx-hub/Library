@@ -11,7 +11,7 @@ const ReView = React.memo(() => {
     >
       <View className="weui-cell__hd">
         <Image
-          src={require("@/Images/icon_reView_2.png")}
+          src={require("@/images/icon_reView_2.png")}
           className="icon"
         ></Image>
       </View>
