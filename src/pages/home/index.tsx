@@ -164,7 +164,7 @@ const Home = () => {
       {/* 主页 */}
       {pageStatus === "done" && !focus && (
         <View className="panel-area">
-          <Panel url="/pages/profile/children/order-history" title="阅读统计">
+          <Panel url="/pages/package/home/order-history/index" title="阅读统计">
             <View className="color-green statistics-panel__number">
               {statistics?.book_num}
               <Text className="statistics-panel__unit">本</Text>

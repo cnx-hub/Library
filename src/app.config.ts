@@ -14,6 +14,14 @@ export default {
     "pages/list/book",
     "pages/book-detail/index",
   ],
+
+  subpackages: [
+    // 首页子包
+    {
+      root: "pages/package/home",
+      pages: ["order-history/index"],
+    },
+  ],
   window: {
     backgroundTextStyle: "dark",
     navigationBarBackgroundColor: "#000",

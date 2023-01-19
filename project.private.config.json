@@ -36,6 +36,13 @@
           "query": "type=search&search_type=书名&keyword=%E7%99%BE%E5%B9%B4%E5%AD%A4%E7%8B%AC",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "借阅历史",
+          "pathName": "pages/package/home/order-history/index",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }
